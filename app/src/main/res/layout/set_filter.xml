@@ -1,0 +1,1885 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="#212727">
+
+    <HorizontalScrollView
+        android:id="@+id/filter_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/fil0"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <TextView
+                    android:id="@+id/f0"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="#000100"
+                    android:gravity="center"
+                    android:text="@string/nonefilter_icon"
+                    android:textColor="#636365"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f0_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter0"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/filter_txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:rotation="270"
+                android:text="@string/filter_txt1"
+                android:textColor="#636365"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/fil1"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f1"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f1_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter1"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon1"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil2"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f2"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f2_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter2"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon2"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil3"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f3"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f3_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter3"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon3"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil4"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f4"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f4_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter4"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon4"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil5"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f5"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f5_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter5"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon5"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/filter_txt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:rotation="270"
+                android:text="@string/filter_txt2"
+                android:textColor="#636365"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/fil6"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f6"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f6_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter6"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon6"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil7"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f7"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f7_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter7"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon7"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil8"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f8"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f8_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter8"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon8"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil9"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f9"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f9_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter9"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon9"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil10"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f10"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f10_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter10"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon10"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/filter_txt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:rotation="270"
+                android:text="@string/filter_txt3"
+                android:textColor="#636365"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/fil11"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f11"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f11_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter11"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon11"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil12"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f12"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f12_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter12"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon12"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil13"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f13"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f13_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter13"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon13"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil14"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f14"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f14_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter14"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon14"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil15"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f15"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f15_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter15"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon15"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil16"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f16"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f16_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter16"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon16"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/filter_txt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:rotation="270"
+                android:text="@string/filter_txt4"
+                android:textColor="#636365"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/fil17"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f17"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f17_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter17"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon17"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil18"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f18"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f18_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter18"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon18"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil19"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f19"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f19_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter19"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon19"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil20"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f20"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f20_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter20"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon20"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/filter_txt5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:rotation="270"
+                android:text="@string/filter_txt5"
+                android:textColor="#636365"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/fil21"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f21"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f21_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter21"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon21"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil22"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f22"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f22_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter22"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon22"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil23"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f23"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f23_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter23"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon23"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/filter_txt6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:rotation="270"
+                android:text="@string/filter_txt6"
+                android:textColor="#636365"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/fil24"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f24"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f24_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter24"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon24"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil25"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f25"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f25_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter25"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon25"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil26"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f26"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f26_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter26"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon26"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil27"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f27"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f27_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter27"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon27"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil28"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f28"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f28_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter28"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon28"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil29"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f29"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f29_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter29"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon29"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil30"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f30"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f30_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter30"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon30"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil31"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f31"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f31_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter31"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon31"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/filter_txt7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:rotation="270"
+                android:text="@string/filter_txt7"
+                android:textColor="#636365"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/fil32"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f32"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f32_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter32"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon32"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil33"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f33"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f33_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter33"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon33"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil34"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f34"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f34_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter34"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon34"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fil35"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f35"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f35_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter35"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon35"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/filter_txt8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:rotation="270"
+                android:text="@string/filter_txt8"
+                android:textColor="#636365"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/fil36"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <ImageView
+                    android:id="@+id/f36"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/empty"
+                    android:scaleType="centerCrop"
+                    android:src="#bdbdbd" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/state_bg_dark_stroke_filter" />
+
+                <TextView
+                    android:id="@+id/f36_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="7dp"
+                    android:background="#000100"
+                    android:gravity="bottom|center_vertical|center_horizontal|center"
+                    android:text="@string/filter36"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fon36"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/filteron_icon"
+                    android:textColor="#ffffff"
+                    android:textSize="35sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>

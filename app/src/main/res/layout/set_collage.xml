@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="#212727">
+
+    <HorizontalScrollView
+        android:id="@+id/collage_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/addpic_rel"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <TextView
+                    android:id="@+id/addpic_ic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/addpic_icon"
+                    android:textColor="#636365"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/addpic_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="@string/cutout_1"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/movepic_rel"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <TextView
+                    android:id="@+id/movepic_ic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/move_icon"
+                    android:textColor="#636365"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/movepic_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="@string/cutout_2"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/move_txt_on"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/move_txt_off"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pensize_rel"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <TextView
+                    android:id="@+id/pensize_ic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/pen_icon"
+                    android:textColor="#636365"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/pensize_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="@string/cutout_3"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/undo_rel"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <TextView
+                    android:id="@+id/undo_ic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/undo_icon"
+                    android:textColor="#636365"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/undo_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="@string/cutout_8"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/redo_rel"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <TextView
+                    android:id="@+id/redo_ic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/redo_icon"
+                    android:textColor="#636365"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/redo_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="@string/cutout_7"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/alphapic_rel"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <TextView
+                    android:id="@+id/alphapic_ic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/opacity_icon"
+                    android:textColor="#636365"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/alphapic_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="@string/cutout_4"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/scalepic_rel"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <TextView
+                    android:id="@+id/scalepic_ic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/zoom_icon"
+                    android:textColor="#636365"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/scalepic_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="@string/cutout_5"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rotatepic_rel"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/state_bg_dark">
+
+                <TextView
+                    android:id="@+id/rotatepic360_ic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/rotate360_icon"
+                    android:textColor="#636365"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/rotatepic_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="@string/cutout_6"
+                    android:textColor="#636365"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>

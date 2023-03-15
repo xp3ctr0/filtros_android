@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7E6060</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+
+    <color name="place_autocomplete_search_text">#de000000</color>
+    <color name="place_autocomplete_search_hint">#42000000</color>
+    <color name="place_autocomplete_prediction_primary_text">#212121</color>
+    <color name="place_autocomplete_prediction_primary_text_highlight">#757575</color>
+    <color name="place_autocomplete_prediction_secondary_text">#757575</color>
+    <color name="place_autocomplete_separator">#1f000000</color>
+    <color name="wallet_bright_foreground_holo_dark">#fff3f3f3</color>
+    <color name="wallet_dim_foreground_holo_dark">#bebebe</color>
+    <color name="wallet_dim_foreground_disabled_holo_dark">#80bebebe</color>
+    <color name="wallet_dim_foreground_inverse_holo_dark">#323232</color>
+    <color name="wallet_dim_foreground_inverse_disabled_holo_dark">#80323232</color>
+    <color name="wallet_bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="wallet_bright_foreground_holo_light">#ff000000</color>
+    <color name="wallet_hint_foreground_holo_light">#808080</color>
+    <color name="wallet_hint_foreground_holo_dark">#808080</color>
+    <color name="wallet_highlighted_text_holo_light">#6633b5e5</color>
+    <color name="wallet_highlighted_text_holo_dark">#6633b5e5</color>
+    <color name="wallet_holo_blue_light">#ff33b5e5</color>
+    <color name="wallet_link_text_light">#0000ee</color>
+</resources>

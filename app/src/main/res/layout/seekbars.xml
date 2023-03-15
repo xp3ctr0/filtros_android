@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="140dp">
+
+    <RelativeLayout
+        android:id="@+id/seekbars_crop"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/seekbars_crop_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.4"
+            android:background="#000000"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/crop_progress_txt"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#636365"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/imagescale_xy_set"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:maxHeight="35dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:progressDrawable="@drawable/empty"
+            android:thumb="@drawable/seek_bar_thumb_w"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/imagerotate_set"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:maxHeight="35dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:progressDrawable="@drawable/empty"
+            android:thumb="@drawable/seek_bar_thumb_w"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/modify_h_set"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:maxHeight="35dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:progressDrawable="@drawable/empty"
+            android:thumb="@drawable/seek_bar_thumb_w"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/modify_v_set"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:maxHeight="35dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:progressDrawable="@drawable/empty"
+            android:thumb="@drawable/seek_bar_thumb_w"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/seekbars_adjust"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/seekbars_adjust_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.4"
+            android:background="#000000"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/adjust_progress_txt"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#636365"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/imageblur_set"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:maxHeight="35dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:progressDrawable="@drawable/empty"
+            android:thumb="@drawable/seek_bar_thumb_w"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/imagesharp_set"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:maxHeight="35dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:progressDrawable="@drawable/empty"
+            android:thumb="@drawable/seek_bar_thumb_w"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/imagesaturation_set"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:maxHeight="35dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:progressDrawable="@drawable/empty"
+            android:thumb="@drawable/seek_bar_thumb_w"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/imagecontrast_set"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:maxHeight="35dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:progressDrawable="@drawable/empty"
+            android:thumb="@drawable/seek_bar_thumb_w"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/imagebrightness_set"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:maxHeight="35dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:progressDrawable="@drawable/empty"
+            android:thumb="@drawable/seek_bar_thumb_w"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/image_hue_set"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:maxHeight="35dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:progressDrawable="@drawable/empty"
+            android:thumb="@drawable/seek_bar_thumb_w"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/image_grain_set"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:maxHeight="35dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:progressDrawable="@drawable/empty"
+            android:thumb="@drawable/seek_bar_thumb_w"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/image_highlights_set"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:maxHeight="35dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:progressDrawable="@drawable/empty"
+            android:thumb="@drawable/seek_bar_thumb_w"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/image_shadows_set"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:maxHeight="35dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:progressDrawable="@drawable/empty"
+            android:thumb="@drawable/seek_bar_thumb_w"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/image_fade_set"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:maxHeight="35dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:progressDrawable="@drawable/empty"
+            android:thumb="@drawable/seek_bar_thumb_w"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/seekbars_hsl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/seekbars_hsl_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.4"
+            android:background="#000000"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/hsl_rel1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_above="@+id/hsl_rel2">
+
+            <TextView
+                android:id="@+id/hsl_progress_txt1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/hsl1_txt"
+                android:background="@drawable/state_hsl1"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/hsl1_txt"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="left|center_vertical|center_horizontal|center"
+                android:text="@string/hsl_1"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/hsl_hue_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hsl1_txt"
+                android:maxHeight="35dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/empty"
+                android:thumb="@drawable/seek_bar_thumb_w"
+                android:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/hsl_hue_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hsl1_txt"
+                android:maxHeight="35dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/empty"
+                android:thumb="@drawable/seek_bar_thumb_w"
+                android:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/hsl_hue_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hsl1_txt"
+                android:maxHeight="35dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/empty"
+                android:thumb="@drawable/seek_bar_thumb_w"
+                android:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/hsl_hue_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hsl1_txt"
+                android:maxHeight="35dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/empty"
+                android:thumb="@drawable/seek_bar_thumb_w"
+                android:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/hsl_hue_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hsl1_txt"
+                android:maxHeight="35dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/empty"
+                android:thumb="@drawable/seek_bar_thumb_w"
+                android:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/hsl_hue_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hsl1_txt"
+                android:maxHeight="35dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/empty"
+                android:thumb="@drawable/seek_bar_thumb_w"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/hsl_rel2"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_above="@+id/hsl_rel3">
+
+            <TextView
+                android:id="@+id/hsl_saturation"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/hsl2_txt"
+                android:background="#000000"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/hsl_progress_txt2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/hsl2_txt"
+                android:background="@drawable/state_saturation"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/hsl2_txt"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="left|center_vertical|center_horizontal|center"
+                android:text="@string/hsl_2"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/hsl_saturation_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hsl2_txt"
+                android:maxHeight="35dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/empty"
+                android:thumb="@drawable/seek_bar_thumb_w"
+                android:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/hsl_saturation_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hsl2_txt"
+                android:maxHeight="35dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/empty"
+                android:thumb="@drawable/seek_bar_thumb_w"
+                android:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/hsl_saturation_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hsl2_txt"
+                android:maxHeight="35dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/empty"
+                android:thumb="@drawable/seek_bar_thumb_w"
+                android:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/hsl_saturation_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hsl2_txt"
+                android:maxHeight="35dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/empty"
+                android:thumb="@drawable/seek_bar_thumb_w"
+                android:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/hsl_saturation_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hsl2_txt"
+                android:maxHeight="35dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/empty"
+                android:thumb="@drawable/seek_bar_thumb_w"
+                android:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/hsl_saturation_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hsl2_txt"
+                android:maxHeight="35dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/empty"
+                android:thumb="@drawable/seek_bar_thumb_w"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/hsl_rel3"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/hsl_progress_txt3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/hsl3_txt"
+                android:background="@drawable/state_lightness"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/hsl3_txt"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="left|center_vertical|center_horizontal|center"
+                android:text="@string/hsl_3"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/hsl_lightness_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hsl3_txt"
+                android:maxHeight="35dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/empty"
+                android:thumb="@drawable/seek_bar_thumb_w"
+                android:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/hsl_lightness_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hsl3_txt"
+                android:maxHeight="35dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/empty"
+                android:thumb="@drawable/seek_bar_thumb_w"
+                android:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/hsl_lightness_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hsl3_txt"
+                android:maxHeight="35dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/empty"
+                android:thumb="@drawable/seek_bar_thumb_w"
+                android:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/hsl_lightness_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hsl3_txt"
+                android:maxHeight="35dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/empty"
+                android:thumb="@drawable/seek_bar_thumb_w"
+                android:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/hsl_lightness_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hsl3_txt"
+                android:maxHeight="35dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/empty"
+                android:thumb="@drawable/seek_bar_thumb_w"
+                android:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/hsl_lightness_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hsl3_txt"
+                android:maxHeight="35dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/empty"
+                android:thumb="@drawable/seek_bar_thumb_w"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/hsl_rel4"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/hsl_progress_txt4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/hsl4_txt"
+                android:background="@drawable/state_overlap"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/hsl4_txt"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="left|center_vertical|center_horizontal|center"
+                android:text="@string/hsl_4"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/hsl_overlap_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hsl4_txt"
+                android:maxHeight="35dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/empty"
+                android:thumb="@drawable/seek_bar_thumb_w"
+                android:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/hsl_overlap_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hsl4_txt"
+                android:maxHeight="35dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/empty"
+                android:thumb="@drawable/seek_bar_thumb_w"
+                android:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/hsl_overlap_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hsl4_txt"
+                android:maxHeight="35dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/empty"
+                android:thumb="@drawable/seek_bar_thumb_w"
+                android:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/hsl_overlap_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hsl4_txt"
+                android:maxHeight="35dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/empty"
+                android:thumb="@drawable/seek_bar_thumb_w"
+                android:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/hsl_overlap_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hsl4_txt"
+                android:maxHeight="35dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/empty"
+                android:thumb="@drawable/seek_bar_thumb_w"
+                android:visibility="gone" />
+
+            <SeekBar
+                android:id="@+id/hsl_overlap_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hsl4_txt"
+                android:maxHeight="35dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:progressDrawable="@drawable/empty"
+                android:thumb="@drawable/seek_bar_thumb_w"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/seekbars_filter"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/seekbars_filter_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.4"
+            android:background="#000000"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/filter_progress_txt"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#636365"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/filter_alpha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:maxHeight="35dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:progressDrawable="@drawable/empty"
+            android:thumb="@drawable/seek_bar_thumb_w"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/seekbars_effect"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/seekbars_effect_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.4"
+            android:background="#000000"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/effect_progress_txt"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#636365"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/effect_alpha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:maxHeight="35dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:progressDrawable="@drawable/empty"
+            android:thumb="@drawable/seek_bar_thumb_w"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/seekbars_collage"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/seekbars_collage_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.4"
+            android:background="#000000"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/collage_progress_txt"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#636365"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/collage_alpha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:maxHeight="35dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:progressDrawable="@drawable/empty"
+            android:thumb="@drawable/seek_bar_thumb_w"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/collage_scale"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:maxHeight="35dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:progressDrawable="@drawable/empty"
+            android:thumb="@drawable/seek_bar_thumb_w"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/collage_rotate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:maxHeight="35dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:progressDrawable="@drawable/empty"
+            android:thumb="@drawable/seek_bar_thumb_w"
+            android:visibility="gone" />
+
+        <SeekBar
+            android:id="@+id/collage_pensize"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:maxHeight="35dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:progressDrawable="@drawable/empty"
+            android:thumb="@drawable/seek_bar_thumb_w"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

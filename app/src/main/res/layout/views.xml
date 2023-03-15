@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0b0e0f">
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/bg_transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/empty"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/preview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/previewmergedimg_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/move_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/rotate_picture"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/mergedimg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/empty" />
+
+                        <RelativeLayout
+                            android:id="@+id/filtered_rel"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/direktload_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@string/empty" />
+
+                            <ImageView
+                                android:id="@+id/picture"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@string/empty" />
+
+                            <ImageView
+                                android:id="@+id/grain_picture"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@string/empty"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/blur_picture"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@string/empty"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/sharp_picture"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@string/empty"
+                                android:visibility="gone" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:alpha="0.3">
+
+                                <ImageView
+                                    android:id="@+id/shadows_picture"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:contentDescription="@string/empty"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:alpha="0.4">
+
+                                <ImageView
+                                    android:id="@+id/highlights_picture"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:contentDescription="@string/empty"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:alpha="0.6">
+
+                                <ImageView
+                                    android:id="@+id/fade_picture"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:contentDescription="@string/empty"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+
+                            <ImageView
+                                android:id="@+id/filter_picture_bg"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@string/empty"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/filter_picture"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:alpha="0.3"
+                                android:contentDescription="@string/empty"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/colorize_picture"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:alpha="0.4"
+                                android:contentDescription="@string/empty"
+                                android:visibility="gone" />
+
+                            <RelativeLayout
+                                android:id="@+id/hsl_picture_rel"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/hsl_picture1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:contentDescription="@string/empty"
+                                    android:visibility="gone" />
+
+                                <ImageView
+                                    android:id="@+id/hsl_picture2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:contentDescription="@string/empty"
+                                    android:visibility="gone" />
+
+                                <ImageView
+                                    android:id="@+id/hsl_picture3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:contentDescription="@string/empty"
+                                    android:visibility="gone" />
+
+                                <ImageView
+                                    android:id="@+id/hsl_picture4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:contentDescription="@string/empty"
+                                    android:visibility="gone" />
+
+                                <ImageView
+                                    android:id="@+id/hsl_picture5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:contentDescription="@string/empty"
+                                    android:visibility="gone" />
+
+                                <ImageView
+                                    android:id="@+id/hsl_picture6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:contentDescription="@string/empty"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/erase_move_all"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/temp_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/empty" />
+
+                <RelativeLayout
+                    android:id="@+id/erase_rotate_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.example.photoeditorpro.EraseView
+                        android:id="@+id/eraseview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/effect_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/empty"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/movemove_picture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/move_dot_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/empty"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/move_dot_erase"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/empty"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/move_dot_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/empty"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/empty"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/left_spaces"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/preview_layout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/preview_layout"
+            android:background="#0b0e0f" />
+
+        <TextView
+            android:id="@+id/right_spaces"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/preview_layout"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/preview_layout"
+            android:background="#0b0e0f" />
+
+        <TextView
+            android:id="@+id/bottom_spaces"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/preview_layout"
+            android:layout_alignParentBottom="true"
+            android:background="#0b0e0f" />
+
+        <TextView
+            android:id="@+id/top_spaces"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/preview_layout"
+            android:layout_alignParentTop="true"
+            android:background="#0b0e0f" />
+    </RelativeLayout>
+</RelativeLayout>

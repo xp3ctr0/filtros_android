@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="#212727">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/state_bg_dark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/hsl_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/hsloff_icon"
+                android:textColor="#ff0000"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/hsl_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/hsloff_icon"
+                android:textColor="#ffff00"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/hsl_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/hsloff_icon"
+                android:textColor="#00ff00"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/hsl_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/hsloff_icon"
+                android:textColor="#00ffff"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/hsl_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/hsloff_icon"
+                android:textColor="#0000ff"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/hsl_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/hsloff_icon"
+                android:textColor="#ff00ff"
+                android:textSize="32sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

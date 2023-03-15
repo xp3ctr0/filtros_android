@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/custom_rel"
+        android:layout_width="290dp"
+        android:layout_height="92dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/state_bg_halfdark">
+
+        <TextView
+            android:id="@+id/car_hint_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_above="@+id/wpx_rel"
+            android:layout_alignLeft="@+id/wpx_rel"
+            android:layout_alignRight="@+id/hpx_rel"
+            android:gravity="center"
+            android:text="@string/carhint_txt"
+            android:textColor="#636365"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/wpx_rel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/state_bg_light_stroke"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/wpx"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:digits="0123456789"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="right|center_vertical|center_horizontal|center"
+                android:inputType="number"
+                android:maxLength="4"
+                android:maxLines="1"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textCursorDrawable="@drawable/state_cursor"
+                android:textSize="18sp">
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/px_width_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/crop_12"
+                android:textColor="#636365"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/car_width_txt"
+            android:layout_width="100dp"
+            android:layout_height="26dp"
+            android:layout_below="@+id/wpx_rel"
+            android:layout_alignLeft="@+id/wpx_rel"
+            android:layout_alignRight="@+id/wpx_rel"
+            android:gravity="center"
+            android:text="@string/crop_14"
+            android:textColor="#636365"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/xpx"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/wpx_rel"
+            android:gravity="center"
+            android:text="@string/crop_13"
+            android:textColor="#636365"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/hpx_rel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/xpx"
+            android:background="@drawable/state_bg_light_stroke"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/hpx"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:digits="0123456789"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="right|center_vertical|center_horizontal|center"
+                android:inputType="number"
+                android:maxLength="4"
+                android:maxLines="1"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textCursorDrawable="@drawable/state_cursor"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/px_height_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="@string/crop_12"
+                android:textColor="#636365"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/car_height_txt"
+            android:layout_width="100dp"
+            android:layout_height="26dp"
+            android:layout_below="@+id/hpx_rel"
+            android:layout_alignLeft="@+id/hpx_rel"
+            android:layout_alignRight="@+id/hpx_rel"
+            android:gravity="center"
+            android:text="@string/crop_15"
+            android:textColor="#636365"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/done_custom"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="@string/done_icon"
+            android:textColor="#636365"
+            android:textSize="32sp" />
+    </RelativeLayout>
+</RelativeLayout>

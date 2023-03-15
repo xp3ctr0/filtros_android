@@ -1,0 +1,424 @@
+<resources>
+    <string name="app_name">Photo Editor</string>
+
+    <string name="place_autocomplete_search_hint">Search</string>
+
+    <string name="place_autocomplete_clear_button">Clear search</string>
+
+    <string name="wallet_buy_button_place_holder">Buy with Google</string>
+
+
+    <string name="empty" />
+
+    <string name="exit_title_txt">DO YOU WANT CLOSE THE APP?</string>
+
+    <string name="cancel_txt">CANCEL</string>
+
+    <string name="exit_txt">YES</string>
+
+    <string name="rate_title_txt">COULD YOU LEAVE US A NICE REVIEW? IT REALLY HELPS.</string>
+
+    <string name="norate_txt">NO, THANKS</string>
+
+    <string name="rate_txt">GIVE 5 STAR</string>
+
+    <string name="open_pic">CHOOSE A IMAGE</string>
+
+    <string name="saving_txt">SAVING..</string>
+
+    <string name="crop_icon">A</string>
+
+    <string name="adjust_icon">B</string>
+
+    <string name="hsl_icon">C</string>
+
+    <string name="effect_icon">D</string>
+
+    <string name="collage_icon">E</string>
+
+    <string name="reset_icon">F</string>
+
+    <string name="back_icon">G</string>
+
+    <string name="save_icon">H</string>
+
+    <string name="filter_icon">I</string>
+
+    <string name="full_icon">J</string>
+
+    <string name="square_icon">K</string>
+
+    <string name="rotate90m_icon">L</string>
+
+    <string name="rotate90p_icon">M</string>
+
+    <string name="zoom_icon">N</string>
+
+    <string name="mirror_icon">O</string>
+
+    <string name="flip_icon">P</string>
+
+    <string name="rotate360_icon">Q</string>
+
+    <string name="done_icon">R</string>
+
+    <string name="modifyh_icon">S</string>
+
+    <string name="modifyv_icon">T</string>
+
+    <string name="brightness_icon">U</string>
+
+    <string name="contrast_icon">V</string>
+
+    <string name="grain_icon">W</string>
+
+    <string name="saturation_icon">X</string>
+
+    <string name="colorize_icon">Y</string>
+
+    <string name="shadows_icon">Z</string>
+
+    <string name="highlights_icon">a</string>
+
+    <string name="blur_icon">b</string>
+
+    <string name="sharpen_icon">c</string>
+
+    <string name="addpic_icon">d</string>
+
+    <string name="pen_icon">e</string>
+
+    <string name="opacity_icon">f</string>
+
+    <string name="move_icon">g</string>
+
+    <string name="hsloff_icon">h</string>
+
+    <string name="hslon_icon">i</string>
+
+    <string name="customaspect_icon">j</string>
+
+    <string name="fade_icon">k</string>
+
+    <string name="nonefilter_icon">l</string>
+
+    <string name="rotatefilter_icon">m</string>
+
+    <string name="filteron_icon">n</string>
+
+    <string name="compare_icon">o</string>
+
+    <string name="redo_icon">p</string>
+
+    <string name="undo_icon">q</string>
+
+    <string name="menu_1">Crop</string>
+
+    <string name="menu_2">Adjust</string>
+
+    <string name="menu_3">HSL</string>
+
+    <string name="menu_4">Filter</string>
+
+    <string name="menu_5">Effect</string>
+
+    <string name="menu_6">Collage</string>
+
+    <string name="top_menu_1">CROP</string>
+
+    <string name="top_menu_2">ADJUST</string>
+
+    <string name="top_menu_3">HSL</string>
+
+    <string name="top_menu_4">FILTER</string>
+
+    <string name="top_menu_5">EFFECT</string>
+
+    <string name="top_menu_6">COLLAGE</string>
+
+    <string name="crop_menu_1">MODIFY</string>
+
+    <string name="crop_menu_2">ROTATE</string>
+
+    <string name="crop_menu_3">RESIZE</string>
+
+    <string name="crop_1">Scale</string>
+
+    <string name="crop_2">Rotate</string>
+
+    <string name="crop_3">Modify H</string>
+
+    <string name="crop_4">Modify V</string>
+
+    <string name="crop_5">-90°</string>
+
+    <string name="crop_6">+90°</string>
+
+    <string name="crop_7">Vertrical</string>
+
+    <string name="crop_8">Horizontal</string>
+
+    <string name="crop_9">Original</string>
+
+    <string name="crop_10">1:1</string>
+
+    <string name="crop_11">Custom</string>
+
+    <string name="crop_12">px</string>
+
+    <string name="crop_13">x</string>
+
+    <string name="crop_14">Width</string>
+
+    <string name="crop_15">Height</string>
+
+    <string name="carhint_txt">Range is 40px - 5000px</string>
+
+    <string name="adjust_1">Brightness</string>
+
+    <string name="adjust_2">Contrast</string>
+
+    <string name="adjust_3">Grain</string>
+
+    <string name="adjust_4">Saturation</string>
+
+    <string name="adjust_5">Colorize</string>
+
+    <string name="adjust_6">Highlights</string>
+
+    <string name="adjust_7">Shadows</string>
+
+    <string name="adjust_8">Blur</string>
+
+    <string name="adjust_9">Sharpen</string>
+
+    <string name="adjust_10">Fade</string>
+
+    <string name="hsl_1">Hue</string>
+
+    <string name="hsl_2">Saturation</string>
+
+    <string name="hsl_3">Lightness</string>
+
+    <string name="hsl_4">Overlap</string>
+
+    <string name="effect_txt1">DUST</string>
+
+    <string name="effect_txt2">LIGHT</string>
+
+    <string name="effect_txt3">BOKEH</string>
+
+    <string name="effect_txt4">LOVE</string>
+
+    <string name="effect_txt5">WEATHER</string>
+
+    <string name="effect_txt6">VINTAGE</string>
+
+    <string name="effect0">NONE</string>
+
+    <string name="effect1">D01</string>
+
+    <string name="effect2">D02</string>
+
+    <string name="effect3">D03</string>
+
+    <string name="effect4">D04</string>
+
+    <string name="effect5">D05</string>
+
+    <string name="effect6">D06</string>
+
+    <string name="effect7">D07</string>
+
+    <string name="effect8">D08</string>
+
+    <string name="effect9">L01</string>
+
+    <string name="effect10">L02</string>
+
+    <string name="effect11">L03</string>
+
+    <string name="effect12">L04</string>
+
+    <string name="effect13">L05</string>
+
+    <string name="effect14">L06</string>
+
+    <string name="effect15">L07</string>
+
+    <string name="effect16">L08</string>
+
+    <string name="effect17">B01</string>
+
+    <string name="effect18">B02</string>
+
+    <string name="effect19">B03</string>
+
+    <string name="effect20">B04</string>
+
+    <string name="effect21">B05</string>
+
+    <string name="effect22">B06</string>
+
+    <string name="effect23">B07</string>
+
+    <string name="effect24">B08</string>
+
+    <string name="effect25">B09</string>
+
+    <string name="effect26">B10</string>
+
+    <string name="effect27">B11</string>
+
+    <string name="effect28">B12</string>
+
+    <string name="effect29">H01</string>
+
+    <string name="effect30">H02</string>
+
+    <string name="effect31">H03</string>
+
+    <string name="effect32">H04</string>
+
+    <string name="effect33">H05</string>
+
+    <string name="effect34">H06</string>
+
+    <string name="effect35">W01</string>
+
+    <string name="effect36">W02</string>
+
+    <string name="effect37">W03</string>
+
+    <string name="effect38">W04</string>
+
+    <string name="effect39">W05</string>
+
+    <string name="effect40">W06</string>
+
+    <string name="effect41">V01</string>
+
+    <string name="effect42">V02</string>
+
+    <string name="effect43">V03</string>
+
+    <string name="effect44">V04</string>
+
+    <string name="effect45">V05</string>
+
+    <string name="effect46">V06</string>
+
+    <string name="effect47">V07</string>
+
+    <string name="effect48">V08</string>
+
+    <string name="effect49">V09</string>
+
+    <string name="effect50">V010</string>
+
+    <string name="filter_txt1">JULY</string>
+
+    <string name="filter_txt2">SHOW</string>
+
+    <string name="filter_txt3">FILM</string>
+
+    <string name="filter_txt4">RETRO</string>
+
+    <string name="filter_txt5">BW</string>
+
+    <string name="filter_txt6">DUO</string>
+
+    <string name="filter_txt7">COLOR</string>
+
+    <string name="filter_txt8">EXAMPLE</string>
+
+    <string name="filter0">NONE</string>
+
+    <string name="filter1">J01</string>
+
+    <string name="filter2">J02</string>
+
+    <string name="filter3">J03</string>
+
+    <string name="filter4">J04</string>
+
+    <string name="filter5">J05</string>
+
+    <string name="filter6">S01</string>
+
+    <string name="filter7">S02</string>
+
+    <string name="filter8">S03</string>
+
+    <string name="filter9">S04</string>
+
+    <string name="filter10">S05</string>
+
+    <string name="filter11">F01</string>
+
+    <string name="filter12">F02</string>
+
+    <string name="filter13">F03</string>
+
+    <string name="filter14">F04</string>
+
+    <string name="filter15">F05</string>
+
+    <string name="filter16">F06</string>
+
+    <string name="filter17">R01</string>
+
+    <string name="filter18">R02</string>
+
+    <string name="filter19">R03</string>
+
+    <string name="filter20">R04</string>
+
+    <string name="filter21">BW01</string>
+
+    <string name="filter22">BW02</string>
+
+    <string name="filter23">BW03</string>
+
+    <string name="filter24">D01</string>
+
+    <string name="filter25">D02</string>
+
+    <string name="filter26">D03</string>
+
+    <string name="filter27">D04</string>
+
+    <string name="filter28">D05</string>
+
+    <string name="filter29">D06</string>
+
+    <string name="filter30">D07</string>
+
+    <string name="filter31">D08</string>
+
+    <string name="filter32">C01</string>
+
+    <string name="filter33">C02</string>
+
+    <string name="filter34">C03</string>
+
+    <string name="filter35">C04</string>
+
+    <string name="filter36">C05</string>
+
+    <string name="cutout_1">Add Pic</string>
+
+    <string name="cutout_2">Move</string>
+
+    <string name="cutout_3">Pen Size</string>
+
+    <string name="cutout_4">Opacity</string>
+
+    <string name="cutout_5">Scale</string>
+
+    <string name="cutout_6">Rotate</string>
+
+    <string name="cutout_7">Redo</string>
+
+    <string name="cutout_8">Undo</string>
+</resources>
